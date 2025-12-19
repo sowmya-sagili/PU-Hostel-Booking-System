@@ -52,7 +52,7 @@ CSS files for styling, JavaScript files for client-side functionality, and asset
 ## 👩‍💻 Developed By
 **Sowmya Sagili**  
 Computer Science Engineering (AI)  
-Major Project
+Minor Project
 
 ---
 

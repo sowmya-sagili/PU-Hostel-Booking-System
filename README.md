@@ -28,7 +28,7 @@ Students can register, log in, view hostel details, and book rooms online, while
 - **HTML** – Structure of the web pages  
 - **CSS** – Styling and layout  
 - **JavaScript** – Client-side functionality
-- * Python – Backend logic and routing 
+- Python – Backend logic and routing 
 
 ---
 
@@ -37,13 +37,25 @@ The project contains multiple HTML files for different modules (login, registrat
 CSS files for styling, JavaScript files for client-side functionality, and asset folders containing images and media resources.
 
 
-## ▶️ How to Run the Project
-1. Download or clone the repository
-2. Open the project folder
-3. Open `index.html` in any web browser
-4. Use the application through the browser interface
-
+## 🔧 How to Run
+1. Clone the repo
+2. Install Python (3.x)
+3. Create & activate virtual environment
+4. Install dependencies:
+   pip install -r requirements.txt
+5. Run the app:
+   python app.py
 ---
+## 🧠 What I Learned
+• Backend routing with Python  
+• Database integration with SQLite  
+• Form validation with JS & Python
+
+## 🚀 Future Improvements
+• Payment gateway integration  
+• Admin analytics dashboard  
+• AI-based room recommendations
+
 
 ## 📽️ Project Demo
 [📽️ Watch Project Demo](https://drive.google.com/file/d/1pcXUi1PO3waxHb4aXdqWHvLOcp5x0Un6/view?usp=drive_link)

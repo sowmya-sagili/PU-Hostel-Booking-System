@@ -27,7 +27,8 @@ Students can register, log in, view hostel details, and book rooms online, while
 ## 🛠️ Technologies Used
 - **HTML** – Structure of the web pages  
 - **CSS** – Styling and layout  
-- **JavaScript** – Client-side functionality  
+- **JavaScript** – Client-side functionality
+- * Python – Backend logic and routing 
 
 ---
 

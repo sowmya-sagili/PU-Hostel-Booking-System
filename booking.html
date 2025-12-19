@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details — Booking</title>
+    <!-- You can link an external CSS file if you prefer -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .top-bar {
+            background-color: #800000; /* Dark Red */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .top-bar img {
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Important for padding and width */
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+        .form-group input:disabled {
+            background-color: #e9ecef;
+            cursor: not-allowed;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .form-row .form-group {
+            flex: 1; /* Each group takes equal space */
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .form-actions button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #btnBack {
+            background-color: #6c757d;
+            color: white;
+        }
+        #btnBack:hover {
+            background-color: #5a6268;
+        }
+        #btnNextPayment {
+            background-color: #004aad;
+            color: white;
+        }
+        #btnNextPayment:hover {
+            background-color: #003080;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <img src="assets/pu_logo.jpeg" alt="Parul University Logo">
+        <h1>Fill Student Details</h1>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <form id="bookingForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                 <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Selected Hostel</label>
+                    <input type="text" id="hostelName" disabled>
+                </div>
+
+                <!-- Row for Floor, Room, and Bed -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="floor">Floor</label>
+                        <select id="floor" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="room">Room Number</label>
+                        <select id="room" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bed">Bed Number</label>
+                        <select id="bed" required></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="number" id="amount" disabled>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" id="btnBack">Back</button>
+                    <button type="submit" id="btnNextPayment">Next (Payment)</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <div id="customAlert" class="custom-alert-overlay" style="display: none;">
+    <div class="custom-alert-box">
+        <p id="customAlertMessage"></p>
+        <button id="customAlertClose">OK</button>
+    </div>
+</div>
+
+    <!-- The booking.js file does not need to be changed! -->
+    <script src="js/booking.js"></script>
+</body>
+</html>

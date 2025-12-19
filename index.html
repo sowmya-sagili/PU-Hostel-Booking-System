@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PU Hostel Booking — Home</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Add form styling fix */
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+<img src="assets/pu_logo.jpeg" alt="PU Logo" class="logo">
+<h1>PU Hostel Booking</h1>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Login</h2>
+    <form id="loginForm">
+
+  <div class="form-row">
+    <label for="email">Email:</label>
+    <input id="email" type="email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="password">Password:</label>
+    <input id="password" type="password" required>
+  </div>
+
+  <button type="submit">Login</button>
+</form>
+    <p>Don't have an account? <a href="#" id="openRegister">Register</a></p>
+  </section>
+
+  <section class="card" id="registerCard" style="display:none">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="regName">Full name</label>
+      <input id="regName" required>
+
+      <label for="regEmail">Email</label>
+      <input id="regEmail" type="email" required>
+
+      <label for="regPassword">Password</label>
+      <input id="regPassword" type="password" required>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </section>
+</main>
+<script src="js/script.js"></script>
+
+</body>
+</html>

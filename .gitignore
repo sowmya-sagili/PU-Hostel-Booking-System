@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Database / uploads
+*.db
+uploads/
+
+# Generated files
+*.pdf
+
+# Virtual environment
+venv/
+.env

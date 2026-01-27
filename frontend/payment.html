@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .qr-section { text-align: center; margin: 20px 0; }
+    .qr-section img { width: 200px; height: 200px; border: 2px solid #ccc; border-radius: 8px; }
+    .form-group { margin: 15px 0; }
+    label { font-weight: bold; display: block; margin-bottom: 6px; }
+    input[type="file"] { padding: 6px; }
+    button { padding: 10px 20px; background: #004aad; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #003080; }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <img src="assets/pu_logo.jpeg" class="logo" alt="Logo">
+  <h1>Payment Page</h1>
+</header>
+
+<main class="container">
+  <div class="card payment-card">
+
+    <h2>Scan QR Code to Pay</h2>
+    <div class="qr-section">
+      <img src="assets/QR.jpg" alt="QR Code for Payment">
+      <p>Scan this QR code to complete your payment.</p>
+    </div>
+
+    <form id="paymentForm">
+      <div class="form-group">
+        <label for="paymentFile">Upload Payment Proof</label>
+        <input type="file" id="paymentFile" accept="image/*,.pdf" required>
+      </div>
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+</main>
+
+<script src="js/payment.js"></script>
+</body>
+</html>

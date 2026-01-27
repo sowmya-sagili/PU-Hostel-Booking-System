@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Booking Details — PU Hostel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #detailsBox {
+  display: flex;
+  flex-direction: column;   /* stack elements vertically */
+  gap: 12px;                /* space between rows */
+}
+
+#detailsBox label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+#detailsBox input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;              /* full width */
+  background: #f9f9f9;
+}
+
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <img src="assets/pu_logo.jpeg" alt="PU Logo" class="logo">
+  <h1>Booking Details</h1>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Your Booking Information</h2>
+    <div id="detailsBox"></div>
+    <button id="proceedBtn">Proceed to Payment</button>
+  </section>
+</main>
+
+<script src="js/details.js"></script>
+</body>
+</html>

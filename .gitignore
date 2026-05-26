@@ -1,14 +1,85 @@
-# Python
+# =========================
+# Spring Boot / Maven
+# =========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven Wrapper Logs
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# IDE Files
+# =========================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Python Legacy Files
+# =========================
 __pycache__/
 *.pyc
-
-# Database / uploads
-*.db
-uploads/
-
-# Generated files
-*.pdf
-
-# Virtual environment
 venv/
 .env
+
+# =========================
+# Database Files
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Generated PDFs
+# =========================
+*.pdf
+
+# =========================
+# Uploads
+# =========================
+
+# Ignore uploaded payment proofs & generated receipts
+uploads/*
+
+# Keep uploads directory structure in Git
+!uploads/.gitkeep
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Build Tool Artifacts
+# =========================
+dependency-reduced-pom.xml
+bin/

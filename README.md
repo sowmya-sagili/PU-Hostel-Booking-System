@@ -3,7 +3,7 @@
 A secure, enterprise-grade Hostel Booking System migrated from Python Flask to a modern Java Spring Boot backend. The application features robust role-based access control, real-time bed availability tracking, digital receipt generation, and SMTP email notifications.
 
 ---
-
+live demo: https://www.linkedin.com/posts/sowmya-sagili-6b634130b_paruluniversity-webdevelopment-javascript-activity-7407837275159629825-IFmj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE7k4qoBmfrigsbVPpIn2O3vjy_JRVgCTNU
 ## Features
 - **Student Portal**:
   - Secure registration and login.
@@ -134,5 +134,4 @@ On the first application run, the database will be automatically seeded with def
 
 ---
 
-## Screenshots Placeholder
-*(Add dashboard screenshots and booking flow images here during deployment)*
+
